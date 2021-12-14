@@ -1,83 +1,278 @@
 /*Home Page Css*/
-header{
-    width: 100%;
-    height: 15vh;
-    background: black;
+header {
+  width: 100%;
+  height: 15vh;
+  background: black;
+  position: relative;
 }
-body{
-    background: black;
+body,
+html {
+  height: 100%;
+  background-color: black;
 }
-nav{
-    width: 100%;
-    height: 100px;
+#contact-body {
+  background: white;
+}
+nav {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+}
+.logo {
+  font-size: 50px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  font-family: Arial, Verdana, Georgia, "Times New Roman", sans-serif;
+}
+#logo_span {
+  color: #74b9ff;
+}
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+  margin: 10px;
+  font-family: Arial, Verdana, Georgia, "Times New Roman", sans-serif;
+}
+.menu a:first-child {
+  border-bottom: 2px solid #74b9ff;
+}
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.left {
+  flex-basis: 50%;
+  float: left;
+}
+.right {
+  flex-basis: 50%;
+  max-width: 400px;
+  float: right;
+}
+
+.content-card-grid-right {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    color: white;
-}
-.logo{
-    font-size: 50px;
-    font-weight: bold;
-    letter-spacing: 5px;
-    font-family: Arial,Verdana,Georgia,'Times New Roman',sans-serif;
-}
-#logo_span{
-    color: #74b9ff;
-}
-.menu a{
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 10px;
-    margin: 10px;
-    font-family: Arial,Verdana,Georgia,'Times New Roman',sans-serif;
-}
-.menu a:first-child{
-    border-bottom: 2px solid #74b9ff;
-}
-.container{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-}
-.left{
-    flex-basis: 50%;
-    float: left;
-}
-.right{
-    flex-basis: 50%;
-    max-width: 400px;
-    float: right;
-}
-.right h1{
-    color: #74b9ff;
-    font-size: 35px;
-    padding-left: 15px;
-    font-family: Arial,Verdana,Georgia,'Times New Roman',sans-serif;
-}
-.right p{
-    font-size: 20px;
-    margin: 10px 10px;
-    padding-left: 15px;
-    font-family: Arial,Verdana,Georgia,'Times New Roman',sans-serif;
-}
-.btn{
-    background: transparent;
-    margin-left: 20px;
-    padding: 10px 20px;
-    color: #74b9ff;
+    color: #833d3d;
+    background: white;
+    opacity: 0.9;
     border-radius: 8px;
-    border: 1px solid #74b9ff;
-    font-family: Arial,Verdana,Georgia,'Times New Roman',sans-serif;
+    padding: 5px;
+    width: auto;
+    right: 30px;
+    position: fixed;
+    margin: 5px;
+  }
+  
+.right h1 {
+  color: #74b9ff;
+  font-size: 35px;
+  padding-left: 15px;
+  font-family: Arial, Verdana, Georgia, "Times New Roman", sans-serif;
 }
-footer{
-    background: black;
-    color: white;
-    padding: 10px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.right p {
+  font-size: 20px;
+  margin: 10px 10px;
+  padding-left: 15px;
+  font-family: Arial, Verdana, Georgia, "Times New Roman", sans-serif;
+}
+.btn {
+  background: transparent;
+  margin-left: 20px;
+  padding: 10px 20px;
+  color: #74b9ff;
+  border-radius: 8px;
+  border: 1px solid #74b9ff;
+  font-family: Arial, Verdana, Georgia, "Times New Roman", sans-serif;
+}
+footer {
+  background: black;
+  color: white;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+
+/*Contact Us Page Css*/
+.service {
+  color: black;
+  text-align: center;
+}
+table,
+th,
+td {
+  border: 1px solid rgb(219, 215, 215);
+  border-collapse: collapse;
+  text-align: center;
+  color: black;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  box-shadow: 5px 10px 8px 10px white;
+}
+
+.heading {
+  text-align: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  color: white;
+}
+.heading-content {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+th,
+td {
+  background-color: white;
+}
+#contact {
+  padding: 30px 0px;
+}
+.contact-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-left-col {
+  flex-basis: 50%;
+  padding-top: 50px;
+}
+.contact-right-col {
+  flex-basis: 50%;
+  color: black;
+}
+.form {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+.form input[type="text"] {
+  width: 70%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+textarea {
+  width: 70%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.c-btn {
+  background: black;
+  color: white;
+  padding: 10px;
+  width: 50%;
+}
+
+/*login*/
+input[type="text"],
+input[type="password"] {
+  display: inline-block;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  background: #f1f1f1;
+  width: 50%;
+  border-radius: 16px;
+}
+
+button {
+  background-color: #74b9ff;
+  cursor: pointer;
+  color: white;
+  margin: 8px 0;
+  padding: 14px 20px;
+  font-family: Arial, Verdana, Georgia, "Times New Roman", sans-serif;
+  width: 50%;
+  border-radius: 16px;
+}
+
+.container-login {
+  padding: 16px;
+  width: 50%;
+  text-align: center;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 1;
+}
+h2{
+    text-align: center;
+    background-color: white;
+}
+.parallax {
+  background-image: url("../images/teamwork-ga862819d5_1280.jpg");
+  height: 100%;
+  /* Create the parallax scrolling effect */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.parallax-text {
+  height: 30%;
+  font-size: 30px;
+  background-color: white;
+}
+
+.text {
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 1;
+  font-size: 30px;
+  padding: 30px;
+  background: white;
+  width: 100%;
+  height: 20%;
+}
+
+.main-login {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.main-parallax {
+  height: 100%;
+  width: 100%;
+}
+
+.img-parallax {
+  width: 10%;
+  height: 10%;
+  margin: 20px;
+  left: 1px;
+  border-radius: 20px;
 }
